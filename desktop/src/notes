@@ -1,0 +1,44 @@
+= estimates of features =
+* speed up start up and shut down - 6m
+** would add versioning to each table in db
+** would need new screen for rolling back
+** might want to kill 'id's and instead use an identifier that containers reference and that binds mutations
+*** or could leave all tables as is and link mutations through a new table, but this might be difficult to fully test
+* add keyboard shortcuts for common tasks - 2w per shortcut
+* give the ability to save when you get a warning screen telling you something went bad and it needs to exit - 1m
+* give the ability to automatically email error logs to Anthony when you get a warning screen telling you something went bad - 2m
+* have amp update itself to the latest version when it starts - 3m
+* move amp to a webpage - 1y
+
+
+
+
+= tabs, enter, other keyboard shortcuts =
+* add pay period
+* save pay period
+
+= Save on fatal/warn dialog =
+* we should allow the user to try and save on fatal/warn dialog
+* probably don't want it to be in the same directory by default, we could give the user a recovery option
+** or just warn them that they may want to roll back
+
+
+= break up GUI class =
+* refactor and delete this class
+
+= on error email anthony =
+* send error log
+* send data
+
+= auto update =
+* not high priority if moving to web
+
+= profile and email info =
+* not high priority if moving to web
+
+= web ui =
+* maybe start with moving the db and core helpers to the cloud, then can migrate individual pieces.
+* use json to transfer data
+* https - need a cert to be trusted
+
+= move to git =
